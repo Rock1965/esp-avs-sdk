@@ -56,7 +56,7 @@ Below is the partition table that will be used by the Alexa firmware.
 | bootloader.bin | 0x1000 | Software bootloader |
 | partitions.bin | 0x8000 | Partition table |
 | configData\_\<uniqueID\>.bin | 0x10000 | User configuration (Amazon auth token and wifi credentials) |
-| esp-alexa.bin | 0x20000 | Application firmware |
+| avs-ESP32LyraTDMSC-beta<version>.bin | 0x20000 | Application firmware |
 
 ### For Windows
 
