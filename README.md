@@ -1,11 +1,12 @@
 # Overview
 
-The Alexa Voice Service (AVS) enables developers to integrate Alexa directly into their products, bringing the convenience of voice control to any connected device. This repository contains prebuilt binary for trying out AVS on ESP32-LyraTD-MSC board. This is a beta release available for evaluation purposes. The list of known issues is maintained at the bottom of this page.  We will keep updating the release with stability fixes and feature updates regularly.
+The Alexa Voice Service (AVS) enables developers to integrate Alexa directly into their products, bringing the convenience of voice control to any connected device. This repository contains prebuilt binary for trying out AVS on ESP32-LyraTD-MSC and ESP32-LyraT boards. This is a beta release available for evaluation purposes. The list of known issues is maintained at the bottom of this page.  We will keep updating the release with stability fixes and feature updates regularly.
 
 # Supported Hardware
 
 Release supports following hardware platforms:
 * [ESP32-LyraTD-MSC](https://www.espressif.com/en/products/hardware/esp32-lyratd-msc)
+* [ESP32-LyraT](https://www.espressif.com/en/products/hardware/esp32-lyrat)
 
 # Getting Started
 
@@ -81,7 +82,7 @@ $ python /path/to/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 
 * Once images are flashed, boot the device by pressing `RST` button.
 * Once the board is connected to your Access Point and subsequently to Alexa, the blue ring will glow once. This indicates that the board is ready to accept commands.
 * You can wake the device, to start receiving your query, in couple of ways:
-    1. *Wake Word Detection* : You can wake the device by saying `Alexa`. The blue ring will glow to indicate that the board is now listening for your query. Go ahead and ask Alexa your query to Alexa.
+    1. *Wake Word Detection* (Supported only on ESP32-LyraTD-MSC) : You can wake the device by saying `Alexa`. The blue ring will glow to indicate that the board is now listening for your query. Go ahead and ask Alexa your query to Alexa.
     2. *Tap-to-Talk Button* : Press-and-Release the `REC` button on the board to wake the device. The blue ring will glow to indicate that the board is now listening for your query. Go ahead and ask Alexa your query to Alexa.
 * You can ask for various things like:
     * tell me joke
